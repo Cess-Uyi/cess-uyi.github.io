@@ -13,12 +13,18 @@ $color-grey-dark: #303030;
 $color-pink: #ddb3c2;
 $color-pink-light: #f8eadf;
 $color-purple: #786fa6;
+$color-purple-light: #ffe7ff;
+$color-blue: #7a2be2;
 
 $bp-largest: 75em; //1200px
 $bp-large:68.75em; //1100px
 $bp-medium:56.25em; //900px
 $bp-small:37.5em; //600px
 $bp-smallest:25em; //400px
+
+a:focus{
+    outline: none;
+}
 
 *,
 *::before,
@@ -315,7 +321,13 @@ nav{
         }
 
        &__introtext{
-           margin-top: 1.5rem; 
+           margin-top: 1.5rem;
+
+           a,
+           a:visited{
+            text-decoration: none;
+            color: $color-brown-2;
+           }
        }
 }
 
@@ -612,16 +624,46 @@ nav{
     font-size: 1.5rem;
     padding: 3rem 0;
 
-    display: grid;
-    grid-template-columns: 7vw 1fr 7vw;
-
     &__content{
-        grid-column: 2 / 3;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 7vw 3fr 2fr 7vw;
+        grid-gap: 2rem;
+    }
 
-        @media screen and (max-width: $bp-small){
-            flex-direction: column;
+    &__about{
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+    }
+
+    &__contact{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+
+        @media screen and (max-width:$bp-small){
+            grid-column: 2 / 4;
+        }
+
+        i{
+            margin-right: 1rem;
+        }
+    }
+
+    &__connect{
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+
+        @media screen and (max-width:$bp-small){
+            grid-column: 2 / 4;
+            grid-row: 3 / 4;
+        }
+
+        ul{
+            display: flex;
+            font-size: 2rem;
+
+            li:not(:last-child){
+                margin-right: 3rem;
+            }
         }
     }
 
@@ -645,28 +687,6 @@ nav{
 
     &__link:hover{
             color: #000;
-    }
-
-    &__about{
-        flex: 3;
-    }
-
-    &__contact{
-        flex: 2;
-        margin: 0 2rem;
-
-        @media screen and (max-width: $bp-small){
-            margin: 2rem 0;
-        }
-    }
-
-    &__connect{
-        flex: 1;
-        text-align: center;
-
-        @media screen and (max-width: $bp-small){
-            text-align: start;
-        }
     }
 }
 
@@ -758,4 +778,21 @@ nav{
             }
         }
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// BOOK NOW PAGE
+#information{
+    height: 15rem;
+    resize: none;
 }

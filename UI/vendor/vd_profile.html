@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&family=Dancing+Script:wght@400;500;600&display=swap"  rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="/UI/images/logo.jpg">
     <link rel="stylesheet" href="../css/main.css">
-    <title>Client Profile</title>
+    <title>Vendor Profile</title>
 </head>
 
 <body class="profile">
@@ -43,62 +43,125 @@
 
         <div class="profile">
             <div class="profile__pic">
-                <img src="../images/dp.png" alt="dp">
+                <img src="../images/spazone_logo.png" alt="dp">
             </div>
             <div class="profile__name">
-                <p>Jane Doe</p>
+                <p>Spa Zone</p>
             </div>
+            <p style="font-size: 1.5rem;">Skincare and Traditional Spa</p>
+            <div class="star-icon">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" style="font-size: 1.5rem;">278 reviews</a>
             <a href="#">Edit Profile <i class="fas fa-pen"></i></a>
         </div>
 
         <div class="side-nav__options">
             <ul class="options__list">
-                <li class="options__list-items"><a href="../homepage/book.html" class="options__list-items-link"><i class="fas fa-edit"></i> Book Appointment</a></li>
-                <li class="options__list-items"><a href="./us_messages.html" class="options__list-items-link"><i class="fas fa-comments message-icon"></i> Messages</a></li>
-                <li class="options__list-items"><a href="./us_activity.html" class="options__list-items-link"><i class="fas fa-history"></i> Your Activity</a></li>
-                <li class="options__list-items"><a href="./us_pend-app.html" class="options__list-items-link"><i class="fas fa-ellipsis-h"></i> Pending Appointments</a></li>
-                <li class="options__list-items"><a href="../homepage/stores.html" class="options__list-items-link"><i class="fas fa-store-alt"></i> Discover Stores</a></li>
-                <li class="options__list-items"><a href="../vendor/vd_index.html" class="options__list-items-link"><i class="fas fa-dollar-sign"></i> Become A Vendor</a></li>
+                <li class="options__list-items"><a href="./vd_pend-app.html" class="options__list-items-link"><i class="fas fa-ellipsis-h"></i> Pending Appointments</a></li>
+                <li class="options__list-items"><a href="../user/us_messages.html" class="options__list-items-link"><i class="fas fa-comments message-icon"></i> Messages</a></li>
+                <li class="options__list-items"><a href="../user/us_activity.html" class="options__list-items-link"><i class="fas fa-history"></i> Appointment History</a></li>
+                <li class="options__list-items"><a href="./vd_index.html" class="options__list-items-link"><i class="fas fa-dollar-sign"></i> Open Another Store</a></li>
+                <!-- <li class="options__list-items"><a href="#" class="options__list-items-link"></a></li>
+                <li class="options__list-items"><a href="#" class="options__list-items-link"></a></li> -->
             </ul>
         </div>
     </div>
 
-    
-        
-
     <div class="dashboard">
         <i class="fas fa-bars open-side-nav"></i>
 
-        <div class="header">            
-            <p class="welcome__text">Welcome Back Jane!</p>
+        <div class="vd__gallery">
+            <div class="images">
+                <img src="../images/carousel__spa.jpg" alt="Carousel Pictures">
+            </div>
+            <form class="vd__gallery__upload">
+                <label for="uploadfile">Upload photos</label><br>
+                <input type="file" name="myfile">
+            </form>
+        </div>
+
+        
+
+        <div class="vendor__card profile__card">
+            <h3>Pending Appointments(13)</h3>
+            <ul>
+                <div class="list">
+                    <li><a href="#">Dolapo</a></li>
+                    <div class="button">
+                        <button class="accept">Accept</button>
+                        <button class="decline">Decline</button>
+                    </div>
+                </div>
+
+                <div class="list">
+                    <li><a href="#">Kemi</a></li>
+                    <div class="button">
+                        <button class="accept">Accept</button>
+                        <button class="decline">Decline</button>
+                    </div>
+                </div>
+
+                <div class="list">
+                    <li><a href="#">Shola</a></li>
+                    <div class="button">
+                        <button class="accept">Accept</button>
+                        <button class="decline">Decline</button>
+                    </div>                    
+                </div>
+
+                <div class="list">
+                    <li><a href="#">Gbenga</a></li>
+                    <div class="button">
+                        <button class="accept">Accept</button>
+                        <button class="decline">Decline</button>
+                    </div>
+                </div>
+
+                <div class="list">
+                    <li><a href="#">Fuzitsai</a></li>
+                    <div class="button">
+                        <button class="accept">Accept</button>
+                        <button class="decline">Decline</button>
+                    </div>                   
+                </div>
+
+                <div class="all">
+                    <a href="#">See all...</a>
+                </div>
+            </ul>
         </div>
 
         <div class="profile__card">
             <h3>Recent History</h3>
             <ul>
                 <div class="list">
-                    <li><a href="#">Hair by Gerald</a></li>
-                    <button><a href="../homepage/book.html"></a></button>
+                    <li><a href="#">Uyi</a></li>
+                    <button>Message</button>
                 </div>
 
                 <div class="list">
-                    <li><a href="#">Spa Zone</a></li>
-                    <button >Book</button>
+                    <li><a href="#">Dolapo</a></li>
+                    <button >Message</button>
                 </div>
 
                 <div class="list">
-                    <li><a href="#">Diana Signature Makeover</a></li>
-                    <button >Book</button>
+                    <li><a href="#">Shola</a></li>
+                    <button >Message</button>
                 </div>
 
                 <div class="list">
-                    <li><a href="#">Nailed It!</a></li>
-                    <button >Book</button>
+                    <li><a href="#">Timi</a></li>
+                    <button >Message</button>
                 </div>
 
                 <div class="list">
-                    <li><a href="#">Bibyonce</a></li>
-                    <button >Book</button>
+                    <li><a href="#">Kemi</a></li>
+                    <button >Message</button>
                 </div>
 
                 <div class="all">
@@ -107,40 +170,10 @@
             </ul>
         </div>
 
-        <div class="profile__card">
-            <h3>Stores You Might Like</h3>
-            <ul>
-                <div class="list">
-                    <li><a href="#">Hair by Gerald</a></li>
-                    <button >Book</button>
-                </div>
-
-                <div class="list">
-                    <li><a href="#">Spa Zone</a></li>
-                    <button >Book</button>
-                </div>
-
-                <div class="list">
-                    <li><a href="#">Diana Signature Makeover</a></li>
-                    <button >Book</button>
-                </div>
-
-                <div class="list">
-                    <li><a href="#">Nailed It!</a></li>
-                    <button >Book</button>
-                </div>
-
-                <div class="list">
-                    <li><a href="#">Bibyonce</a></li>
-                    <button >Book</button>
-                </div>
-                
-                <div class="all">
-                    <a href="#">See all...</a>
-                </div>
-            </ul>
+        <div class="vendor__button">
+            <button>View All Appointment History</button>
         </div>
-</div>
+    </div>
     
     <script src="https://kit.fontawesome.com/ceaf37b45e.js" crossorigin="anonymous"></script>
 </body>
