@@ -10,7 +10,7 @@
     <title>Book Appointment</title>
 </head>
 
-<body class="signup__body">
+<body class="profile">
     <div class="main user__main">
         <nav>
             <ul class="nav">
@@ -46,40 +46,72 @@
         </nav>
     </div>
 
-    <div class="card">
-        <div class="card__body">
-            <form action="" class="signup__form">
-                <div class="signup__form__name">
+
+
+    <div class="side-nav" id="sidenav">
+
+        <i class="fas fa-times exit-side-nav"></i>
+        <input type="text" placeholder="Search..." class="searchbar">
+
+        <div class="profile">
+            <div class="profile__pic">
+                <img src="../images/dp.png" alt="dp">
+            </div>
+            <div class="profile__name">
+                <p>Jane Doe</p>
+            </div>
+            <a href="#">Edit Profile <i class="fas fa-pen"></i></a>
+        </div>
+
+        <div class="side-nav__options">
+            <ul class="options__list">
+                <li class="options__list-items"><a href="../homepage/book.html" class="options__list-items-link"><i class="fas fa-edit"></i> Book Appointment</a></li>
+                <li class="options__list-items"><a href="./us_messages.html" class="options__list-items-link"><i class="fas fa-comments message-icon"></i> Messages</a></li>
+                <li class="options__list-items"><a href="./us_activity.html" class="options__list-items-link"><i class="fas fa-history"></i> Your Activity</a></li>
+                <li class="options__list-items"><a href="./us_pend-app.html" class="options__list-items-link"><i class="fas fa-ellipsis-h"></i> Pending Appointments</a></li>
+                <li class="options__list-items"><a href="../homepage/stores.html" class="options__list-items-link"><i class="fas fa-store-alt"></i> Discover Stores</a></li>
+                <li class="options__list-items"><a href="../vendor/vd_index.html" class="options__list-items-link"><i class="fas fa-dollar-sign"></i> Become A Vendor</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="signup__body">
+        
+    <div class="inner-profile">
+        <div class="inner-profile__body">
+            <form action="">
+                <div>
                 <label for="name">Name</label> <br>
                 <input type="text" id="name" name="name" placeholder="full name" required="required">
                 </div>
 
-                <div class="signup__form__phone">
+                <div>
                 <label for="phone">Phone</label> <br>
                 <input type="number" id="phone" name="phone" placeholder="phone number" required="required">
                 </div>
 
-                <div class="signup__form__store">
+                <div>
                     <label for="store">Store</label> <br>
                     <input type="text" id="store" name="store" placeholder="name of store" required="required">
                 </div>
 
-                <div class="signup__form__service">
+                <div>
                     <label for="service">Service</label> <br>
                     <input type="text" id="service" name="service" placeholder="service required" required="required">
                 </div>
 
-                <div class="signup__form__time">
+                <div>
                     <label for="time">Time</label> <br>
                     <input type="time" id="time" name="time" required="required">
                 </div>
 
-                <div class="signup__form__date">
+                <div>
                     <label for="date">Date</label> <br>
                     <input type="date" id="date" name="date" required="required">
                 </div>
 
-                <div class="signup__form__additional-information">
+                <div>
                     <label for="information">And Additional information?</label> <br>
                     <input type="text" id="information" name="information">
                 </div>
@@ -90,6 +122,7 @@
                 <button class="btn">BOOK</button>
                 </div>
         </div>
+    </div>
     </div>
     
 </body>

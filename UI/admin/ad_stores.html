@@ -10,7 +10,7 @@
     <title>Stores</title>
 </head>
 
-<body class="stores__body">
+<body class="profile">
     <div class="main user__main">
         <nav>
             <ul class="nav">
@@ -36,8 +36,39 @@
         </nav>
     </div>
 
+    
+    <div class="side-nav"  id="sidenav">
+
+        <i class="fas fa-times exit-side-nav"></i>
+        <input type="text" placeholder="Search..." class="searchbar">
+
+        <div class="profile">
+            <div class="profile__pic">
+                <img src="../images/dp.png" alt="dp">
+            </div>
+            <div class="profile__name">
+                <p>Admin</p>
+            </div>
+            <a href="#">Edit Profile <i class="fas fa-pen"></i></a>
+        </div>
+
+        <div class="side-nav__options">
+            <ul class="options__list">
+                <li class="options__list-items"><a href="./ad_stores.html" class="options__list-items-link"><i class="fas fa-ellipsis-h"></i> Manage Stores(34)</a></li>
+                <li class="options__list-items"><a href="./ad_users.html" class="options__list-items-link"><i class="fas fa-comments message-icon"></i> Manage Users(312)</a></li>
+                <li class="options__list-items"><a href="../user/us_activity.html" class="options__list-items-link"><i class="fas fa-history"></i> Transaction History</a></li>
+                <li class="options__list-items"><a href="../vendor/vd_index.html" class="options__list-items-link"><i class="fas fa-dollar-sign"></i> Set Up Store</a></li>
+                <!-- <li class="options__list-items"><a href="#" class="options__list-items-link"></a></li>
+                <li class="options__list-items"><a href="#" class="options__list-items-link"></a></li> -->
+            </ul>
+        </div>
+    </div>
+
+    <div class="stores__body">
     <div class="stores__template">
         <div class="stores__table">
+        <i class="fas fa-bars open-side-nav toggle-btn" onclick="show()"></i>
+
             <table>
                 <caption>Stores(5)</caption>
                 <tr>
@@ -56,8 +87,8 @@
                     <td>09023846296</td>
                     <td>14/03/2021</td>
                     <td>
-                        <button>Suspend</button>
-                        <button>Deactivate</button>
+                        <button class="btn">Suspend</button>
+                        <button class="btn">Deactivate</button>
                     </td>
                 </tr>
 
@@ -68,8 +99,8 @@
                     <td>07024839902</td>
                     <td>14/03/2021</td>
                     <td>
-                        <button>Suspend</button>
-                        <button>Deactivate</button>
+                        <button class="btn">Suspend</button>
+                        <button class="btn">Deactivate</button>
                     </td>
                 </tr>
 
@@ -80,8 +111,8 @@
                     <td>08136290674</td>
                     <td>14/03/2021</td>
                     <td>
-                        <button>Suspend</button>
-                        <button>Deactivate</button>
+                        <button class="btn">Suspend</button>
+                        <button class="btn">Deactivate</button>
                     </td>
                 </tr>
 
@@ -92,8 +123,8 @@
                     <td>07057859367</td>
                     <td>13/03/2021</td>
                     <td>
-                        <button>Suspend</button>
-                        <button>Deactivate</button>
+                        <button class="btn">Suspend</button>
+                        <button class="btn">Deactivate</button>
                     </td>
                 </tr>
 
@@ -104,14 +135,15 @@
                     <td>01 246 7935</td>
                     <td>11/03/2021</td>
                     <td>
-                        <button>Suspend</button>
-                        <button>Deactivate</button>
+                        <button class="btn">Suspend</button>
+                        <button class="btn">Deactivate</button>
                     </td>
                 </tr>
 
             </table>
         </div>
     </div>
+</div>
 
 
     <script src="https://kit.fontawesome.com/ceaf37b45e.js" crossorigin="anonymous"></script>

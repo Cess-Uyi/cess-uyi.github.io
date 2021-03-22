@@ -16,8 +16,7 @@
             <ul class="nav">
                 <a href="../../index.html"><img src="/UI/images/logo.jpg" class="nav__logo" alt="CBP Logo"></a>
 
-                <li class="nav__item big-screen"><a class="nav__link" href="#">Wigs</a></li>
-                <li class="nav__item big-screen"><a class="nav__link" href="#">Weaves</a></li>
+                <li class="nav__item big-screen"><a class="nav__link" href="#">Salon</a></li>
                 <li class="nav__item big-screen"><a class="nav__link" href="#">Spa</a></li>
                 <li class="nav__item big-screen"><a class="nav__link" href="#">Nails</a></li>
                 <li class="nav__item big-screen"><a class="nav__link" href="#">Makeup</a></li>
@@ -25,8 +24,7 @@
                 <div class="dropdown">
                     <li class="nav__item dropdown__nav__item dropdown__nav__item-main"><a class="nav__link dropdown__main" href="#">Our Services<i class="fas fa-caret-down" style="font-size: 1.8rem; margin-left: .3rem;" ></i></a></li>
                 <div class="dropdown__content">
-                    <li class="nav__item dropdown__nav__item"><a class="dropdown__nav__link nav__link" href="#">Wigs</a></li>
-                    <li class="nav__item dropdown__nav__item"><a class="dropdown__nav__link nav__link" href="#">Weaves</a></li>
+                    <li class="nav__item dropdown__nav__item"><a class="dropdown__nav__link nav__link" href="#">Salon</a></li>
                     <li class="nav__item dropdown__nav__item"><a class="dropdown__nav__link nav__link" href="#">Spa</a></li>
                     <li class="nav__item dropdown__nav__item"><a class="dropdown__nav__link nav__link" href="#">Nails</a></li>
                     <li class="nav__item dropdown__nav__item"><a class="dropdown__nav__link nav__link" href="#">Makeup</a></li>
@@ -36,9 +34,8 @@
         </nav>
     </div>
 
-    <div class="side-nav">
-
-        <i class="fas fa-times exit-side-nav"></i>
+    <div class="side-nav" id="side-nav">
+        <i class="fas fa-times exit-side-nav" id="close-btn" onclick="closeNav()"></i>
         <input type="text" placeholder="Search..." class="searchbar">
 
         <div class="profile">
@@ -66,8 +63,8 @@
     
         
 
-    <div class="dashboard">
-        <i class="fas fa-bars open-side-nav"></i>
+    <div class="dashboard" id="dashboard">
+        <i id="open-btn" class="fas fa-bars open-side-nav toggle-btn" onclick="openNav()"></i>
 
         <div class="header">            
             <p class="welcome__text">Welcome Back Jane!</p>
@@ -78,27 +75,22 @@
             <ul>
                 <div class="list">
                     <li><a href="#">Hair by Gerald</a></li>
-                    <button><a href="../homepage/book.html"></a></button>
+                    <a href="../homepage/book.html"><button class="btn">Book</button></a>
                 </div>
 
                 <div class="list">
                     <li><a href="#">Spa Zone</a></li>
-                    <button >Book</button>
-                </div>
-
-                <div class="list">
-                    <li><a href="#">Diana Signature Makeover</a></li>
-                    <button >Book</button>
+                    <a href="../homepage/book.html"><button class="btn">Book</button></a>
                 </div>
 
                 <div class="list">
                     <li><a href="#">Nailed It!</a></li>
-                    <button >Book</button>
+                    <a href="../homepage/book.html"><button class="btn">Book</button></a>
                 </div>
 
                 <div class="list">
                     <li><a href="#">Bibyonce</a></li>
-                    <button >Book</button>
+                    <a href="../homepage/book.html"><button class="btn">Book</button></a>
                 </div>
 
                 <div class="all">
@@ -112,27 +104,22 @@
             <ul>
                 <div class="list">
                     <li><a href="#">Hair by Gerald</a></li>
-                    <button >Book</button>
+                    <a href="../homepage/book.html"><button class="btn">Book</button></a>
                 </div>
 
                 <div class="list">
                     <li><a href="#">Spa Zone</a></li>
-                    <button >Book</button>
+                    <a href="../homepage/book.html"><button class="btn">Book</button></a>
                 </div>
 
                 <div class="list">
                     <li><a href="#">Diana Signature Makeover</a></li>
-                    <button >Book</button>
-                </div>
-
-                <div class="list">
-                    <li><a href="#">Nailed It!</a></li>
-                    <button >Book</button>
+                    <a href="../homepage/book.html"><button class="btn">Book</button></a>
                 </div>
 
                 <div class="list">
                     <li><a href="#">Bibyonce</a></li>
-                    <button >Book</button>
+                    <a href="../homepage/book.html"><button class="btn">Book</button></a>
                 </div>
                 
                 <div class="all">
@@ -140,8 +127,9 @@
                 </div>
             </ul>
         </div>
-</div>
+    </div>
     
     <script src="https://kit.fontawesome.com/ceaf37b45e.js" crossorigin="anonymous"></script>
+    <script src="../../index.js"></script>
 </body>
 </html>
