@@ -37,9 +37,9 @@
     </div>
 
     
-    <div class="side-nav"  id="sidenav">
+    <div class="side-nav"  id="side-nav">
 
-        <i class="fas fa-times exit-side-nav"></i>
+        <i class="fas fa-times exit-side-nav" id="close-btn" onclick="closeNav()"></i>
         <input type="text" placeholder="Search..." class="searchbar">
 
         <div class="profile">
@@ -67,7 +67,7 @@
     <div class="stores__body">
     <div class="stores__template">
         <div class="stores__table">
-        <i class="fas fa-bars open-side-nav toggle-btn" onclick="show()"></i>
+            <i id="open-btn" class="fas fa-bars open-side-nav toggle-btn" onclick="openNav()"></i>
 
             <table>
                 <caption>Users(312)</caption>
@@ -129,5 +129,7 @@
 
 
     <script src="https://kit.fontawesome.com/ceaf37b45e.js" crossorigin="anonymous"></script>
+    <script src="../../index.js"></script>
+
 </body>
 </html>

@@ -534,7 +534,7 @@ nav {
   justify-self: center; }
 
 #information {
-  height: 10rem;
+  height: auto;
   resize: none; }
 
 .signup__body {
@@ -592,7 +592,8 @@ nav {
     margin: 1rem 0; }
     .signup__form__end p {
       font-size: 1.3rem;
-      color: #303030; }
+      color: #303030;
+      text-align: center; }
       .signup__form__end p a,
       .signup__form__end p a:visited {
         text-decoration: none;
@@ -624,17 +625,19 @@ nav {
   color: #303030; }
   .side-nav .exit-side-nav {
     font-size: 2rem;
-    display: flex;
-    justify-self: end;
-    margin: .5rem 2rem .5rem 0; }
+    float: right;
+    margin: .5rem 1.5rem 2rem 0; }
     .side-nav .exit-side-nav:hover {
       color: #7a2be2; }
+    @media screen and (min-width: 900px) {
+      .side-nav .exit-side-nav {
+        display: none !important; } }
   .side-nav .searchbar {
-    padding: .7rem 1rem;
-    margin: 0 1rem .5rem 1rem;
-    height: 3rem;
+    padding: .5rem 1rem;
+    margin: 2rem 1rem .5rem 1rem;
+    height: 2.5rem;
     border: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     cursor: pointer;
     border: 0.1rem solid #6D5D4B; }
   .side-nav .profile {
@@ -662,15 +665,16 @@ nav {
   .side-nav__options {
     margin-top: 1.2rem; }
     .side-nav__options .options__list-items {
-      height: 3rem; }
+      height: 2.7rem; }
       .side-nav__options .options__list-items:hover {
         background-color: #ffe7ff;
         color: #7a2be2; }
       .side-nav__options .options__list-items a {
         color: inherit;
         text-decoration: none;
-        font-size: 1.3rem;
-        margin: 0 2rem; }
+        font-size: 1.2rem;
+        margin: 0 2rem;
+        width: 100%; }
         .side-nav__options .options__list-items a i {
           margin-right: .5rem; }
 
@@ -690,12 +694,11 @@ nav {
   cursor: pointer; }
   .open-side-nav:hover {
     color: #7a2be2; }
+  @media screen and (min-width: 900px) {
+    .open-side-nav {
+      display: none !important; } }
 
-@media screen and (min-width: 56.25em) {
-  .toggle-btn {
-    display: none !important; } }
-
-@media screen and (max-width: 56.25em) {
+@media screen and (max-width: 900px) {
   #side-nav {
     display: none; } }
 
@@ -705,7 +708,7 @@ nav {
 
 .header {
   grid-column: 1 / -1;
-  height: 10rem;
+  height: 8rem;
   background-color: #6D5D4B;
   display: flex;
   align-content: center;
@@ -734,10 +737,10 @@ nav {
     color: #303030;
     text-align: center;
     margin-bottom: 1rem;
-    font-size: 1.7rem; }
+    font-size: 1.3rem; }
   .profile__card ul {
     list-style: none;
-    font-size: 1.4rem; }
+    font-size: 1.2rem; }
     .profile__card ul .list {
       display: flex; }
     .profile__card ul .all {
@@ -802,12 +805,13 @@ nav {
     .pend-app__template,
     .stores__template {
       grid-column: 1 / -1;
-      font-size: 1.5rem; } }
+      margin: 0 1rem 0 1rem; } }
 
 table, th, td {
   border: 0.1rem solid #303030;
   padding: 1.5rem;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  font-size: 1.2rem; }
   @media screen and (max-width: 37.5em) {
     table, th, td {
       padding: .5rem; } }
@@ -821,6 +825,52 @@ tr:hover {
 th {
   background-color: #6D5D4B;
   color: #eee; }
+
+.btn-reply {
+  width: 4.5rem;
+  height: 2.3rem; }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.modal-content {
+  background-color: #eee;
+  margin: 15% auto;
+  padding: 1rem;
+  border: 0.5rem solid #6D5D4B;
+  width: 80%; }
+  .modal-content label {
+    color: #7a2be2;
+    font-weight: 300;
+    font-size: 1.4rem; }
+  .modal-content input {
+    width: 100%;
+    padding: .5rem;
+    height: fit-content;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    border: 0.1rem solid #999;
+    border-radius: .4rem; }
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
 
 .inner-profile {
   display: grid;
@@ -851,7 +901,8 @@ th {
     color: #7a2be2;
     font-weight: 300;
     font-size: 1.4rem; }
-  .inner-profile div input {
+  .inner-profile div input,
+  .inner-profile div .form_dropdown {
     width: 90%;
     padding: .5rem;
     height: 3rem;
@@ -859,7 +910,8 @@ th {
     box-sizing: border-box;
     border: 0.1rem solid #999;
     border-radius: .4rem; }
-    .inner-profile div input:focus {
+    .inner-profile div input:focus,
+    .inner-profile div .form_dropdown:focus {
       outline: none;
       border: 0.15rem solid #7a2be2; }
   .inner-profile__end {
@@ -919,11 +971,17 @@ th {
   background-image: none;
   background-color: green;
   color: #eee; }
+  .accept-btn-pendapp {
+    height: 2rem;
+    width: 5rem; }
 
 .decline-btn {
   background-image: none;
   background-color: red;
   color: #eee; }
+  .decline-btn-pendapp {
+    height: 2rem;
+    width: 5rem; }
 
 .vendor__button {
   justify-self: center;
@@ -965,7 +1023,7 @@ th {
 
 .admin__header {
   grid-column: 1 / -1;
-  height: 12rem;
+  height: 8rem;
   background-image: linear-gradient(to bottom right, rgba(109, 93, 75, 0.6), rgba(84, 72, 58, 0.6)), url(../images/salon-img.jpg);
   background-size: cover;
   background-position: center;
@@ -975,13 +1033,13 @@ th {
   align-content: center; }
   .admin__header__text {
     grid-column: 2 / 3;
-    font-size: 6rem; }
+    font-size: 4rem; }
     @media screen and (max-width: 37.5em) {
       .admin__header__text {
-        font-size: 4.5rem; } }
+        font-size: 3rem; } }
     @media screen and (max-width: 450px) {
       .admin__header__text {
-        font-size: 4rem;
+        font-size: 2rem;
         grid-column: 1 / -1;
         justify-self: center; } }
 
