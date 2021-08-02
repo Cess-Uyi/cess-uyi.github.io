@@ -24,8 +24,8 @@
                 <div class="dropdown">
                     <li class="nav__item dropdown__nav__item dropdown__nav__item-main"><a class="nav__link dropdown__main" href="#">Our Services<i class="fas fa-caret-down" style="font-size: 1.8rem; margin-left: .3rem;" ></i></a></li>
                 <div class="dropdown__content">
+                    <li class="nav__item dropdown__nav__item"><a class="dropdown__nav__link nav__link" href="#">Wigs</a></li>
                     <li class="nav__item dropdown__nav__item"><a class="dropdown__nav__link nav__link" href="#">Salon</a></li>
-                    <li class="nav__item dropdown__nav__item"><a class="dropdown__nav__link nav__link" href="#">Spa</a></li>
                     <li class="nav__item dropdown__nav__item"><a class="dropdown__nav__link nav__link" href="#">Nails</a></li>
                     <li class="nav__item dropdown__nav__item"><a class="dropdown__nav__link nav__link" href="#">Makeup</a></li>
                 </div>
@@ -61,8 +61,8 @@
         <div class="side-nav__options">
             <ul class="options__list">
                 <li class="options__list-items"><a href="./vd_pend-app.html" class="options__list-items-link"><i class="fas fa-ellipsis-h"></i> Pending Appointments</a></li>
-                <li class="options__list-items"><a href="./vd_messages.html" class="options__list-items-link"><i class="fas fa-comments message-icon"></i> Messages</a></li>
-                <li class="options__list-items"><a href="./vd_activity.html" class="options__list-items-link"><i class="fas fa-history"></i> Appointment History</a></li>
+                <li class="options__list-items"><a href="../user/us_messages.html" class="options__list-items-link"><i class="fas fa-comments message-icon"></i> Messages</a></li>
+                <li class="options__list-items"><a href="../user/us_activity.html" class="options__list-items-link"><i class="fas fa-history"></i> Appointment History</a></li>
                 <li class="options__list-items"><a href="./vd_index.html" class="options__list-items-link"><i class="fas fa-dollar-sign"></i> Open Another Store</a></li>
                 <!-- <li class="options__list-items"><a href="#" class="options__list-items-link"></a></li>
                 <li class="options__list-items"><a href="#" class="options__list-items-link"></a></li> -->
@@ -79,69 +79,33 @@
                 <caption>Pending Appointments</caption>
                 <tr>
                     <th>Client</th>
-                    <th>Phone</th>
                     <th>Service</th>
+                    <th>Cost</th>
                     <th>Date and Time</th>
-                    <th>Note</th>
                 </tr>
 
                 <tr>
-                    <td>
-                        Jane Doe <br>
-                        <a href="#"><button class="btn accept-btn accept-btn-pendapp">Accept</button></a>
-                        <a href="#"><button class="btn decline-btn decline-btn-pendapp">Decline</button></a>
-                    </td>
-                    <td>0987654321</td>
-                    <td>Salon</td>
+                    <td>Jane Doe</td>
+                    <td>Weave Install</td>
+                    <td>#3,000</td>
                     <td>15/03/2021 <br>
                     18:22</td>
-                    <td>
-                        Weave install
-                        <br>
-                        <a href="#"><button class="btn btn-reply" id="myBtn">Reply</button></a>
-                    <!-- MODAL -->
-                        <div id="myModal" class="modal">
-                            <!-- Modal content -->
-                            <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <label for="Jane Doe">Jane Doe</label> <br>
-                            <p>Weave Install</p>
-                            <br>
-                            <label for="You">You:</label> <br>
-                            <input type="text">
-                            <br> <br>
-                            <a href="#"><button class="btn btn-reply">Send</button></a>      
-                            </div>        
-                         </div>
-                    </td>
                 </tr>
 
                 <tr>
-                    <td>
-                        James Brown
-                        <br>
-                        <a href="#"><button class="btn accept-btn accept-btn-pendapp">Accept</button></a>
-                        <a href="#"><button class="btn decline-btn decline-btn-pendapp">Decline</button></a>
-                    </td>
-                    <td>0987654321</td>
-                    <td>Spa</td>
+                    <td>James Brown</td>
+                    <td>Hair Straightening</td>
+                    <td>#7,500</td>
                     <td>16/03/2021 <br>
                     02:22</td>
-                    <td>I'd like to know the price upfront for a brazillian wax</td>
                 </tr>
 
                 <tr>
-                    <td>
-                        Tunde Ednut
-                        <br>
-                        <a href="#"><button class="btn accept-btn accept-btn-pendapp">Accept</button></a>
-                        <a href="#"><button class="btn decline-btn decline-btn-pendapp">Decline</button></a>
-                    </td>
-                    <td>0987654321</td>
-                    <td>Salon</td>
+                    <td>Tunde Ednut</td>
+                    <td>Tinting Weave</td>
+                    <td>#5, 000</td>
                     <td>16/03/2021 <br>
                     17:37</td>
-                    <td>I want a weave tint. Is burgundy available?</td>
                 </tr>
 
             </table>
